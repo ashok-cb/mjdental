@@ -145,3 +145,22 @@ var swiper = new Swiper(".mySwiper", {
       element.classList.remove("d-flex");
       element.classList.add("d-none");
     }
+     
+    var spinner = document.getElementById('spinner');
+    var dataContainer = document.getElementById('page-data');
+
+    function fetchProducts(){
+      var  url="https://ashok-cb.github.io/mjdental/"
+        fetch(url).then(response => 
+          {
+            if (!response.ok) {
+              throw error
+            }
+            return response.json();
+          }).then(data => {
+              products=data.products;
+              spinner.style.display='none'
+              dataContainer.style.display='block'
+          })
+
+      } 
