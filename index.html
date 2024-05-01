@@ -1197,5 +1197,25 @@
     <script src="./vendor/jquery-cookie/jquery-cookie.min.js"></script>
     <script src="./vendor/font-awesome/js/fontawesome.min.js" async></script>
     <script src="./main.js"></script>
+    <script>
+    var spinner = document.getElementById('spinner');
+    var dataContainer = document.getElementById('page-data');
+
+    function fetchProducts(){
+      var  url="https://ashok-cb.github.io/mjdental/"
+        fetch(url).then(response => 
+          {
+            if (!response.ok) {
+              throw error
+            }
+            return response.json();
+          }).then(data => {
+              products=data.products;
+              spinner.style.display='none'
+              dataContainer.style.display='block'
+          })
+
+      } 
+    </script>
 </body>
 </html>
