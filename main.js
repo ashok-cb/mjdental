@@ -131,10 +131,6 @@ var swiper = new Swiper(".mySwiper", {
 
     });
 
-    var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-      trigger: 'hover'
-    })
-
     function popupOpen(){
       const element = document.getElementById("wa-pop");
       element.classList.remove("d-none");
