@@ -211,6 +211,7 @@
     margin-top: -2%;
   }
   .top-swp-discription{
+    font-weight: 600;
     font-family:myFirstFont;
     color: orangered;
   }
@@ -391,7 +392,7 @@
     font-size: 2.7rem;
   }
   .top-swp-discription {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .top-swp-content{
     font-size: 0.9rem;
@@ -421,7 +422,7 @@
     font-size: 4rem;
   }
   .top-swp-discription {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   .top-swp-content{
     font-size: 1.3rem;
@@ -442,6 +443,9 @@
 
 
 @media (min-width: 768px) { 
+  .top-swp-discription {
+    font-size: 3rem;
+  }
   .faq-header{
     font-size: 3rem;
   }
@@ -469,6 +473,9 @@
  }
 
 @media (min-width: 992px) { 
+  .top-swp-discription {
+    font-size: 3rem;
+  }
   .faq-header{
     font-size: 4rem;
   }
@@ -485,5 +492,8 @@
 }
 
 @media (min-width: 1200px) { 
+  .top-swp-discription {
+    font-size: 3rem;
+  }
 
  }
